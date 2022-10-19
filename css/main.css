@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+
+* {
+   box-sizing: border-box;
+   font-family: sans-serif;
+   padding: 0;margin: 0;
+}
+
+body {
+   background-image: radial-gradient(#0075ff,transparent);
+
+
+}
+
+.container {
+   padding-left: 15px;
+   padding-right: 15px;
+   margin: 2px auto;
+
+}
+
+@media (min-width: 768px) {
+   .container {
+      width: 750px;
+   }
+}
+
+/* MEDIUM  SCREEN */
+@media (min-width: 992px) {
+   .container {
+      width: 970px;
+   }
+}
+
+/* LARGE  SCREEN  */
+@media (min-width: 1200px) {
+   .container {
+      width: 1170px;
+   }
+}
+
+/* End setting of screen  */
+
+
+.container {
+   display: grid;
+   grid-template-columns: 5fr 3fr;
+   gap: .625rem;
+   padding: .625rem;
+   background: black;
+}
+
+.img {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.img-box {
+ flex-basis: 65%;
+   border-radius: .625rem;
+   display: flex;
+}
+
+.img-box img {
+   max-width: 100%;
+   border-radius: inherit;
+}
+
+.upload {
+   padding: .625rem;
+   color: white;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-basis: 30%;
+}
+
+.upload label {
+
+   background-color:#9d8fc4;
+   padding: .625rem 1.875rem;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: rgba(0, 0, 0, 0.797);
+   font-weight: bold;
+   font-size: 1.2rem;
+   cursor: pointer;
+   transition: 0.3s;
+
+
+}
+
+.upload label:hover {
+   background-color: #8b76c7;
+
+}
+
+.upload input {
+   display: none;
+}
+
+
+.filters {
+   color: white;
+   padding: 15px;
+}
+.filters ul,.filters ul li{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   list-style: none;
+   direction: rtl;
+}
+
+.filters ul li:last-child{
+flex-direction: row;
+justify-content: space-around;
+
+}
+.filters ul li a,span{
+   padding: .625rem 1.25rem ;
+   background-color: #060;
+cursor: pointer;
+}
+
+@media screen  and (max-width:650px){
+   .container{
+      grid-template-columns: 1fr;
+      gap: 1.875rem;
+   }
+}
+
+a{
+color: white;
+text-decoration: none;
+   
+}
+
+img{
+   max-width: 100%;
+   max-height: 500px;
+}
+
+footer{
+   width: 100%;
+   background-color: #8b76c7;
+color: darkblue;;
+   font-weight: bold;
+   padding: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   font-family: "cairo san ";
+}
